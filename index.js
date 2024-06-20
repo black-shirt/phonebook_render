@@ -58,10 +58,10 @@ app.get('/api/persons/:id', (request, response) => {
 })
 
 app.get('/info', (request, response) => {
-  const Date = new Date()
+  const date = new Date()
   response.send(
     `<p>Phonebook has info for ${persons.length} people</p>
-    ${Date}`
+    ${date}`
   )
 })
 
